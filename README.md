@@ -1,5 +1,11 @@
 # GitHub API - buscando usuários com fetch
-Esse é um projeto do curso DevQuest, onde vamos aplicar os conhecimentos que aprendemos ao longo dos últimos módulos.
+Esse projeto é uma Quest do curso DevQuest e será enviada para correção. Seu objetivo principal é simular novas solicitações feitas pelo gerente de projeto, que incluem:
+
+- Número de Seguidores: Mostrar a quantidade de seguidores do usuário.
+
+- Últimos Eventos do Usuário: Exibir os 10 últimos eventos do usuário.
+
+- Informações dos repositórios: Quantidade de forks, estrelas, watchers e a linguagem de programação utilizada.
 
 ## Índice
 
@@ -19,10 +25,11 @@ Esse é um projeto do curso DevQuest, onde vamos aplicar os conhecimentos que ap
 
 ## Links
 
-- Link do projeto: [Visualizar projeto](https://erickf-silva.github.io/fetch-github-api-main/)
+- Link do projeto: [Visualizar projeto](https://erickf-silva.github.io/quest-desafio-api-github/)
 
 ## Tecnologias utilizadas
 
 - HTML
 - CSS
 - JS
+- API GitHub
