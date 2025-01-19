@@ -9,7 +9,7 @@ const screen = {
                                 <p>Seguidores: ${user.followers}</p>
                                 <p>Seguindo: ${user.following}</p>
                             </div>
-                        </div>`
+                                       </div>`
 
         let repositoriesItens = ''
         user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a> <span>🍴${repo.forks} ⭐${repo.stargazers_count} 👀${repo.watchers} 👨‍💻${repo.language ?? 'Não possui linguagem'}</span></li>`)
@@ -23,14 +23,14 @@ const screen = {
 
         let eventItens = ''
         user.events.forEach(event => {
-            if(event.type === 'PushEvent') {
+            if (event.type === 'PushEvent') {
                 eventItens += `<li><p>${event.repo.name}<span> - ${event.payload.commits[0].message}</span></p></li>`
-            } else if(event.type === 'CreateEvent') {
+            } else if (event.type === 'CreateEvent') {
                 eventItens += `<li><p>${event.repo.name}<span> - ${event.payload.ref_type}</span></p></li>`
             }
         })
 
-        if(user.events.length > 0) {
+        if (user.events.length > 0) {
             this.userProfile.innerHTML += `<div class="events">
                                                 <h2>Eventos</h2>
                                                 <ul>${eventItens}</ul>
